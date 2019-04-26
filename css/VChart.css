@@ -1,0 +1,737 @@
+.box {
+  height: 50px;
+  background: #ccc;
+}
+
+.footer {
+  height: 150px;
+}
+
+/* 基本样式 */
+
+a {
+  text-decoration: none;
+}
+
+.w div a:hover {
+  color: #34d7c3;
+}
+
+body, ul, li, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+li {
+  list-style: none;
+}
+
+.clearfix::after, .clearfix::before {
+  display: table;
+  content: "";
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/* 主体 */
+
+.w {
+  width: 1200px;
+  margin: 4px auto;
+}
+
+/* 主体头部 */
+
+.top .logo {
+  display: inline-block;
+  width: 181px;
+  height: 66px;
+  background: url(../img/icons.png) no-repeat;
+  margin-top: 13px;
+}
+
+.top li {
+  float: left;
+  padding-left: 20px;
+}
+
+.top .last-li {
+  padding-left: 30px;
+}
+
+.top li a {
+  font-size: 12px;
+  line-height: 114px;
+  color: #7a7a7a;
+  padding-bottom: 5px;
+}
+
+.main .bd-active, .top a:hover {
+  color: #34d7c3;
+  border-bottom: 1px solid #27d5bf;
+}
+
+.main .bd-active a {
+  color: #34d7c3;
+}
+
+.top .last-li a:hover {
+  border-bottom: none;
+}
+
+.top li a span {
+  font-size: 16px;
+}
+
+/* 轮播图部分 */
+
+.slider {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+.slider-img{
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+.slider-text {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: rgba(0, 0, 0, .5);
+}
+
+.slider-text {
+  padding: 15px;
+}
+
+.slider-text a {
+  padding: 4px 0;
+  font-size: 14px;
+  display: -webkit-box;
+  width: 250px;
+  line-height: 30px;
+  color: #fff;
+  white-space: pre-wrap;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+/* V榜--周榜 */
+
+.week-chart {
+  margin-top: 50px;
+  border: 2px solid #f5f5f5;
+  border-bottom: 5px solid #f5f5f5;
+}
+
+/* V榜--周榜--左侧 */
+
+.week-chart .section-l {
+  padding: 45px 12px 0;
+  width: 210px;
+  border-right: 2px solid #f5f5f5;
+}
+
+.section-l li {
+  width: 210px;
+  line-height: 65px;
+  text-align: center;
+  background: #f0f0f0;
+  margin-bottom: 43px;
+}
+
+.section-l .sec-active, .section-l li:hover {
+  background: #34d7c3;
+  color: #fff;
+}
+
+/* V榜--周榜--右侧 */
+
+.section-r {
+  width: 910px;
+  padding: 0 25px;
+}
+
+.section-r h3 {
+  font: bold 22px 'Microsoft Yahei';
+  text-align: center;
+  padding: 25px 0;
+}
+
+.section-r h3~p {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  padding-bottom: 60px;
+}
+
+.section-r .videos img {
+  width: 600px;
+  height: 338px;
+}
+
+.section-r .article {
+  width: 280px;
+}
+
+.article h4 a {
+  color: #000;
+  font: bold 18px/57px 'Microsoft Yahei';
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.article p {
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.section-r .more {
+  margin: 35px 0;
+  text-align: center;
+}
+
+.section-r .more a {
+  font-size: 14px;
+  color: #666;
+}
+
+/* 专辑和资讯 */
+
+/* 资讯部分 */
+
+.news {
+  width: 351px;
+}
+
+.news h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 30px 0 25px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.news li {
+  margin-bottom: 20px;
+  border: 1px solid rgba(52, 215, 195, .3);
+}
+
+.news li:hover {
+  box-shadow: 0 0 2px 0 #34d7c3;
+}
+
+.news li>a {
+  float: left;
+  margin-right: 10px;
+}
+
+.news li>a img {
+  width: 120px;
+}
+
+.news h5 a {
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #333
+}
+
+.news p {
+  width: 195px;
+  float: left;
+  color: #999;
+  font-size: 12px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+/* 专辑 */
+
+.album {
+  width: 800px;
+  padding-top: 29px;
+}
+
+/* -----栏目公共头部样式 start------ */
+
+.column-t {
+  line-height: 32px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 25px;
+  height: 33px;
+}
+
+.column-t h4 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.column-t h4, .column-t span {
+  float: left;
+}
+
+.column-t span {
+  color: #999;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+.column-t li {
+  float: left;
+}
+
+.column-t a {
+  color: #7a7a7a;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.column-t a:hover {
+  color: #34d7c3;
+}
+
+/* -----栏目公共头部样式 end------ */
+
+.album-b {
+  display: flex;
+  justify-content: space-between;
+}
+
+.album-b li {
+  position: relative;
+  width: 250px;
+  background: #f6f6f6;
+}
+
+.album-b img {
+  width: 250px;
+}
+
+.album-b em {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 34px;
+}
+
+.album-b em img {
+  width: 100%;
+}
+
+.info {
+  width: 230px;
+  border-top: 1px solid #ccc;
+  padding: 10px 0 0 20px;
+}
+
+.album-b p {
+  font-size: 14px;
+  color: #666;
+  line-height: 30px;
+}
+
+.album-b p span {
+  color: #34d7c3;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.album-b p b {
+  color: #333;
+}
+
+.album-b h5 {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+}
+
+.ranking li {
+  width: 228px;
+  height: 60px;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.ranking i, .ranking img, .contribution {
+  float: left;
+}
+
+.ranking i {
+  line-height: 58px;
+}
+
+.ranking i, .ranking span {
+  color: #ff6e9f;
+  font-style: normal;
+  font-family: 'impact';
+}
+
+.ranking img {
+  width: 58px;
+  height: 58px;
+  border-radius: 29px;
+  margin: 0 15px;
+}
+
+.ranking p {
+  width: 120px;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ranking p span {
+  font-weight: 400;
+}
+
+/* 周榜冠军 */
+
+.week-champion {
+  background: #ebf0f3;
+  padding: 15px 0;
+}
+
+.week-champion .column-t li a, .week-supreme .column-t li a {
+  border-right: 1px dotted #ccc;
+}
+
+.week-champion .column-t li:last-child a, .week-supreme .column-t li:last-child a {
+  border-right: none;
+}
+
+.champion-img {
+  width: 640px;
+}
+
+.champion-img img {
+  width: 100%;
+}
+
+.champion-data {
+  position: relative;
+  width: 500px;
+  height: 330px;
+  background: #fff;
+  padding: 30px 0 0 30px;
+}
+
+.champion-data img {
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+.champion-data h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+}
+
+.champion-data p {
+  color: #34d7c3;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+.champion-data p span {
+  color: #333;
+}
+
+.tongji {
+  padding-top: 10px;
+}
+
+.tongji li {
+  float: left;
+  width: 110px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 20px 0;
+  border-right: 1px solid #ccc;
+}
+
+.tongji li:nth-child(3), .tongji li:nth-child(7) {
+  margin-right: 30px;
+  border-right: none;
+}
+
+.champion-data .tongji p {
+  font-size: 12px;
+  color: #999
+}
+
+.champion-data .tongji i {
+  font-size: 18px;
+  line-height: 40px;
+  font-style: normal;
+}
+
+/* 一周新歌  */
+
+.new-song {
+  padding: 30px 0;
+}
+
+.new-list li {
+  width: 220px;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 15px;
+}
+
+.new-list li:nth-child(5n) {
+  margin-right: 0;
+}
+
+.new-list a {
+  display: block;
+  position: relative;
+  width: 220px;
+  font-size: 12px;
+  line-height: 25px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.new-list a:hover {
+  color: #34d7c3;
+}
+
+.new-list a:first-child {
+  margin-bottom: 10px;
+}
+
+.new-list a:nth-child(n+2) {
+  padding-left: 10px;
+}
+
+.new-list a img {
+  width: 100%;
+}
+
+.new-list p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 210px;
+  color: #fff;
+  font: normal 24px/42px 'Impact';
+  padding: 0 5px;
+  background: rgba(0, 0, 0, .5)
+}
+
+.new-list p span {
+  float: right;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Microsoft Yahei';
+}
+
+.new-song .w {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+/* 周榜最高纪录 */
+
+.week-supreme {
+  padding-bottom: 30px;
+}
+
+.sup-list li {
+  float: left;
+  width: 285px;
+  margin-right: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.sup-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.sup-list a img {
+  width: 285px;
+}
+
+.sup-list a p, .sup-list a h5 {
+  position: absolute;
+  left: 15px;
+}
+
+.sup-list a p {
+  top: 110px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.sup-list a h5 {
+  top: 130px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #34d7c3;
+}
+
+.play-num {
+  font-size: 14px;
+  line-height: 35px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.play-num span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 30px;
+  background: url(../img/icons.png) -61px -167px;
+}
+
+.play-num em {
+  font-size: 18px;
+  color: #34d7c3;
+}
+
+.date, .sustain {
+  font-size: 12px;
+  color: #999;
+  line-height: 20px;
+}
+
+.date span {
+  color: #666;
+  padding: 0 5px;
+}
+
+.sustain span {
+  color: #333;
+  padding: 0 5px;
+}
+
+/* 合作伙伴 */
+
+.cooperative {
+  background: #ebedf3;
+  padding: 30px 0 0;
+}
+
+.data-link {
+  padding: 0 0 20px;
+}
+
+.list-name {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.data-link li {
+  position: relative;
+  border: 10px solid #fff;
+  margin-right: 40px;
+  float: left;
+  width: 340px;
+}
+
+.data-link a {
+  display: none;
+  width: 320px;
+  height: 132px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, .7)
+}
+
+.data-link li:hover a {
+  display: block;
+}
+
+.data-link a h4 {
+  font-size: 20px;
+  line-height: 40px;
+  padding-top: 10px;
+}
+
+.data-link a p {
+  font-size: 12px;
+}
+
+.zl-list li {
+  margin-bottom: 5px;
+}
+
+.hz-list li {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.hz-list li:hover {
+  border: 1px solid #34d7c3;
+}
+
+.hz-list li img {
+  width: 112px;
+  height: 52px;
+}
+
+.returntop {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  display: block;
+  width: 50px;
+  height: 66px;
+  background: url(../picture/returntop.png)
+}
