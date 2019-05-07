@@ -1,0 +1,517 @@
+body {
+    background-color: #fff;
+}
+
+// bigBanner部分
+.bigBanner {
+    position: relative;
+    margin-top: 28px;
+    height: 480px;
+    min-width: 1020px;
+    max-width: 1600px;
+
+    ul {
+        position: relative;
+
+        li {
+            position: absolute;
+            height: 480px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .bannerTitle {
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        width: 250px;
+        height: 370px;
+        text-align: right;
+        z-index: 11;
+        background: #000;
+        opacity: 0.6;
+        padding-top: 15px;
+        padding-right: 15px;
+
+        :first-child {
+            color: #52e2c0;
+        }
+
+        a {
+            display: block;
+            height: 35px;
+            line-height: 35px;
+            color: #fff;
+        }
+    }
+
+}
+
+// 首播模块
+
+.first-appear {
+    padding-right: 20px;
+    position: relative;
+
+    .nav {
+        h3 {
+            font-size: 20px;
+            color: #000;
+            float: left;
+            font-weight: bold;
+            padding: 10px 0 10px 20px;
+        }
+
+        .nav-title {
+            float: right;
+            padding-top: 20px;
+
+            .nav-name {
+                float: left;
+                font-size: 14px;
+
+                a {
+                    padding-bottom: 10px;
+                }
+
+                a:hover {
+                    color: #52e2c0;
+                }
+            }
+
+            .line {
+                float: left;
+                height: 14px;
+                width: 0;
+                margin: 0 16px;
+                border-left: 3px dotted #ccc;
+
+            }
+        }
+
+        .hr {
+            position: absolute;
+            top: 48px;
+            width: 1475px;
+            margin: 0 20px;
+            height: 3px;
+            background: #eee;
+            z-index: -1;
+
+        }
+    }
+
+    .content-title {
+        padding-top: 20px;
+
+        a:hover {
+            color: #52e2c0;
+        }
+
+        .content-show1,
+        .content-show2,
+        .content-show3,
+        .content-show4,
+        .content-show5 {
+            display: none;
+        }
+
+        .content-show,
+        .content-show1,
+        .content-show2,
+        .content-show3,
+        .content-show4,
+        .content-show5 {
+            .list1 {
+                float: left;
+                width: 470px;
+                height: 390px;
+                overflow: hidden;
+                padding-left: 20px;
+
+                .prev {
+                    position: absolute;
+                    color: #eee;
+                    font-size: 50px;
+                    top: 200px;
+                    left: 16px;
+                    display: none;
+                    z-index: 910;
+                }
+
+                .prev:hover {
+                    color: #52e2c0;
+                    cursor: pointer;
+                }
+
+                .next {
+                    position: absolute;
+                    top: 200px;
+                    left: 458px;
+                    color: #eee;
+                    font-size: 50px;
+                    display: none;
+                    z-index: 910;
+                }
+
+                .next:hover {
+                    color: #52e2c0;
+                    cursor: pointer;
+                }
+
+                div {
+                    float: left;
+
+                    img {
+                        width: 470px;
+                        height: 323px;
+                    }
+
+                    h5 {
+                        font-size: 16px;
+                        margin: 10px 0;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: #999;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    p:hover {
+                        color: #52e2c0;
+                    }
+                }
+            }
+
+            .list {
+                float: left;
+                width: 220px;
+                margin-left: 29px;
+
+                img {
+                    width: 220px;
+                    height: 124px;
+                }
+
+                h5 {
+                    font-size: 14px;
+                    margin: 10px 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                p {
+                    font-size: 12px;
+                    color: #999;
+                    margin-bottom: 15px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                p:hover {
+                    color: #52e2c0;
+                }
+            }
+        }
+    }
+
+}
+
+.active {
+    color: #52e2c0;
+    border-bottom: 2px solid #52e2c0;
+    padding-bottom: 8px;
+}
+
+.end {
+    width: 100%;
+    height: 5px;
+    background: #eee;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.list {
+    float: left;
+    width: 220px;
+    margin-left: 29px;
+
+    img {
+        width: 220px;
+        height: 124px;
+    }
+
+    h5 {
+        font-size: 14px;
+        margin: 10px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    p {
+        font-size: 12px;
+        color: #999;
+        margin-bottom: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    p:hover {
+        color: #52e2c0;
+    }
+}
+
+.change,
+.change2 {
+    font-size: 16px;
+    color: #a4a4a4;
+    margin-top: 15px;
+    padding-left: 25px;
+    background: url(../img/change.png) 3px 3px no-repeat;
+}
+
+.live {
+    .content-title {
+        ul {
+            li {
+                .list {
+                    div {
+                        a {
+                            h5 {
+                                font-size: 14px;
+                                margin: 10px 0;
+                                white-space: wrap;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+.change1 {
+    font-size: 16px;
+    color: #a4a4a4;
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.change1:hover {
+    color: #52e2c0;
+}
+
+.rate {
+    rate1 {
+        float: left;
+    }
+}
+
+//音乐V榜
+.program {
+    li {
+        dl {
+            width: 220px;
+            margin-left: 31px;
+
+            dt {
+                margin-bottom: 10px;
+
+                h5 {
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+
+                p {
+                    color: #aaa;
+                }
+            }
+
+            dd {
+                border-top: 1px solid #eee;
+
+                // height: 192px;
+                img {
+                    width: 220px;
+                    height: 124px;
+                }
+
+                h5 {
+                    font-size: 14px;
+                    line-height: 25px;
+                    margin: 12px 12px 8px;
+                    height: 50px;
+                    text-overflow: inherit;
+                    white-space: inherit;
+                }
+            }
+        }
+
+    }
+}
+
+// 精品悦单
+.list2 {
+    float: left;
+    margin-left: 29px;
+    position: relative;
+
+    .forBox {
+        width: 220px;
+
+        img {
+            width: 220px;
+            height: 220px;
+        }
+
+        h5 {
+            font-size: 14px;
+            margin: 5px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 10px;
+        }
+
+        p {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 10px;
+        }
+    }
+
+    .hideBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 470px;
+        height: 270px;
+        background: #f3f5f7;
+        z-index: 1;
+        overflow: hidden;
+        display: none;
+
+        a {
+            color: #333;
+            text-decoration: none;
+
+            .leftBox {
+                float: left;
+                width: 270px;
+                height: 270px;
+
+                img {
+                    float: left;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .shadow {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: url(../img/good/play_icon.png) no-repeat;
+                    background-size: 100%;
+                    width: 270px;
+                    height: 270px;
+                }
+            }
+
+            .rightBox {
+                padding: 0 22px;
+                width: 155px;
+                float: right;
+                border: 1px solid #e5e5e5;
+                border-left: 0;
+                height: 278px;
+
+                .xiang1 {
+                    height: 145px;
+                    overflow: hidden;
+
+                    h4 {
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding: 10px 0;
+                    }
+
+                    .des {
+                        font-size: 12px;
+                        color: #a4a4a4;
+                        line-height: 23px;
+                        margin-top: -6px;
+                        display: block;
+                    }
+                }
+
+                .xiang2 {
+                    overflow: hidden;
+                    margin-top: 7px;
+
+                    img {
+                        float: left;
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    span {
+                        font-size: 14px;
+                        margin-left: 50px;
+                        line-height: 40px;
+                        display: block;
+                    }
+                }
+
+                .xiang3 {
+                    font-size: 12px;
+                    color: #a4a4a4;
+                    margin-left: 50px;
+                    display: block;
+
+                    i {
+                        background: url(../img/good/playcount.png) no-repeat;
+                        display: inline-block;
+                        width: 13px;
+                        height: 14px;
+                        vertical-align: middle;
+                        margin-right: 5px;
+                        margin-bottom: 3px;
+                    }
+                }
+
+                .wa {
+                    font-size: 12px;
+                    color: #a4a4a4;
+                    margin-left: 50px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+}
+
+//回到顶部
+.return_top{
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    display: none;
+}
