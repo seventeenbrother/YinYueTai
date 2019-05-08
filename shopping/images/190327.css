@@ -1,0 +1,109 @@
+.fb .bing-line{ width:1px; height:10px; display:inline-block; vertical-align:top; background:#ebebeb; overflow:hidden; margin:5px 8px 0;}
+.fb .bing-form{ color:#999}
+.fb .bing-form i{ width:12px; height:12px; display:inline-block; overflow:hidden; vertical-align:top; margin:3px 5px 0; background-image:url(../images/ico_bing.gif); background-repeat:no-repeat}
+.fb .bing-form i.bing{ background-position:0 0}
+.fb .bing-form i.google{background-position:0 -12px}
+.bing-chaxunci{ line-height:20px; color:#333; font-weight:bold; padding-bottom:13px; padding-top:2px; width:550px;word-break: normal; word-wrap:normal}
+.bing-snb{ line-height:20px; color:#666; font-weight:bold; padding-bottom:13px; width:550px;overflow:hidden;zoom:1;height:20px;}
+.overline{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal;}
+.bing-snb a{ margin-right:2px;color:#666 !important;}
+.bing-snb i{ background:url(../images/ico_en.gif?v=1) 0 0 no-repeat; width:16px; height:16px; display:inline-block; margin:1px 5px 0 0; vertical-align:top}
+.hover-line{color:#666; text-decoration:none}
+.bing-snb .s1{ font-weight:bold;}
+.bing-snb .s2{ text-decoration:underline; color:#00c}
+/*.bing-snb span{ position:relative; *top:-1px;}*/
+@-webkit-keyframes gao{
+0%{opacity:0;-webkit-transform:scale(.3); -ms-transform:scale(.3); -o-transform:scale(.3);}
+50%{opacity:1;-webkit-transform:scale(1.05);-ms-transform:scale(1.05); -o-transform:scale(1.05);}
+70%{-webkit-transform:scale(.95);-ms-transform:scale(.95); -o-transform:scale(.95);}
+100%{-webkit-transform:scale(1);-ms-transform:scale(1); -o-transform:scale(1);}
+}
+@-moz-keyframes gao{
+0%{opacity:0;-webkit-transform:scale(.3); -ms-transform:scale(.3); -o-transform:scale(.3);}
+50%{opacity:1;-webkit-transform:scale(1.05);-ms-transform:scale(1.05); -o-transform:scale(1.05);}
+70%{-webkit-transform:scale(.95);-ms-transform:scale(.95); -o-transform:scale(.95);}
+100%{-webkit-transform:scale(1);-ms-transform:scale(1); -o-transform:scale(1);}
+}
+@-ms-keyframes gao{
+0%{opacity:0;-webkit-transform:scale(.3); -ms-transform:scale(.3); -o-transform:scale(.3);}
+50%{opacity:1;-webkit-transform:scale(1.05);-ms-transform:scale(1.05); -o-transform:scale(1.05);}
+70%{-webkit-transform:scale(.95);-ms-transform:scale(.95); -o-transform:scale(.95);}
+100%{-webkit-transform:scale(1);-ms-transform:scale(1); -o-transform:scale(1);}
+}
+@-o-keyframes gao{
+0%{opacity:0;-webkit-transform:scale(.3); -ms-transform:scale(.3); -o-transform:scale(.3);}
+50%{opacity:1;-webkit-transform:scale(1.05);-ms-transform:scale(1.05); -o-transform:scale(1.05);}
+70%{-webkit-transform:scale(.95);-ms-transform:scale(.95); -o-transform:scale(.95);}
+100%{-webkit-transform:scale(1);-ms-transform:scale(1); -o-transform:scale(1);}
+}
+.logo-yw{background: url(../images/logo-yw.png) no-repeat;background-image: -webkit-image-set( url(../images/logo-yw2x.png) 2x, url(../images/logo-yw.png) 1x);background-image: -moz-image-set( url(../images/logo-yw2x.png) 2x, url(../images/logo-yw.png) 1x);}
+.sponsored{ margin-top:0}
+.bing-no-rb{ text-align:center; font-size:14px; color:#333; line-height:20px; padding-top:44px;}
+.bing-no-rb p{ padding-bottom:21px;}
+.less-word{ font-size:14px; color:#333; line-height:20px; padding-top:16px;}
+.headsearch, .header{z-index: 1111111111;}
+.bing-bg-write{  position:absolute; width:100%; height:100%;_height:1000px;background:#fff;filter:alpha(opacity=90);-moz-opacity:0.9;opacity:0.9;zoom:1; z-index:502000; left:0; top:0;}
+.bing-loading{ position:absolute; width:550px; left:0; text-align:center; z-index:503000; top:180px; line-height:38px; color:#525050; font-size:14px;}
+.bing-loading span{  background:url(../images/38.gif) 0 0 no-repeat; width:38px; height:38px; display:inline-block; margin-right:10px; vertical-align:top; position:relative; *top:-10px}
+.bing-results{word-break:normal;word-wrap:normal;}
+.bing160328{color: #999;padding: 1px 0 0 49px;margin-bottom: 18px;margin-bottom: 20px\0;margin-bottom: 20px\9;width: 900px;background: url(../../vr/images/bing160328.gif) 35px center no-repeat;line-height: 22px;line-height: 18px\0;line-height: 18px\9;}
+.bing-banner{padding: 5px 0px 20px;}
+.bing-banner img{ vertical-align:top}
+
+.missing{ line-height:20px; color:#999; height:22px; margin-top:-2px}
+.missing span{ text-decoration: line-through}
+.fy{ margin-left:5px; margin-right:5px;color:#999}
+.xsm{ font-size:12px;margin: 2px 3px 0 0;cursor: auto; display:inline-block; vertical-align:top;*zoom:1; line-height:14px;font-weight: bold; color:#00c}
+
+.ft{word-break: break-word;}
+.fb a:visited{ color:#666}
+.bing-texing .ft{ font-size:15px !important; line-height:22px !important}
+.topqc{ width:550px !important}
+.bing-chaxunci .qt{display:inline-block; padding-right:12px; position:relative; background:url(../images/ico_san.png) 100% 7px no-repeat; margin-left:10px}
+.bing-chaxunci .qt-on{background:url(../images/ico_san.png) 100% -9px no-repeat;}
+.zk-box{ padding-top:1px; margin-left:-30px}
+.zk-box a{ margin-bottom:3px; display:inline-block; margin-left:30px}
+.jh-box{ padding-bottom:13px;}
+.jh-box .vrTitle{ color:#666; line-height:24px}
+.jh-box .jh-td{ overflow:hidden;zoom:1; padding-top:3px;}
+.jh-box .jh-td .img-box{ float:left; margin-right:10px; width:120px; height:90px; overflow:hidden; margin-top:5px}
+.jh-box .jh-td .img-box img{ vertical-align:top; width:100%}
+.jh-box .jh-td .txt-box{ overflow:hidden;zoom:1}
+.jh-box .time-label{ line-height:22px; margin-bottom:-1px}
+.jh-box .time-label .label{ color:#006621;}
+.jh-box .time-label .time{ color:#999; margin-left:10px}
+.jh-box ul{ line-height:24px; padding-top:3px;}
+.jh-box ul li{ position:relative; padding-right:80px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;word-wrap: normal;}
+.jh-box ul li a{}
+.jh-box ul li .label{ color:#006621; margin-left:10px}
+.jh-box ul li .time{ color:#999; position:absolute; right:0; top:0;_top:-5px; background:#fff; padding-left:10px;}
+
+.kindle .vrTitle{white-space:normal; line-height:24px}
+.kindle .vrTitle a,.kindle .vrTitle a em{text-decoration:none}
+.kindle .vrTitle a:hover,.kindle .vrTitle a:hover em,.kindle .kin-txt p a:hover{text-decoration: underline}
+.kindle .kin-img{ float:left; margin-right:10px;margin-top:10px; border:1px solid #ebebeb}
+.kindle .kin-img img{ vertical-align:top}
+.kindle .kin-box,.kindle .kin-txt{ overflow:hidden;zoom:1; line-height:20px}
+.kindle .kin-txt{ padding-top:6px; max-height:156px; _height:153px}
+.kindle .kin-txt p{ padding-bottom:4px}
+.kindle .kin-txt p a{ text-decoration:none}
+.kindle .kin-txt .over-p{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-wrap:normal;}
+.kindle .kin-txt .star{ width:65px; background:url(../images/ico_xing.gif) 0 -13px repeat-x; display:inline-block; height:13px; overflow:hidden; vertical-align:top; margin:2px 0 0 }
+.kindle .kin-txt .star span{ background:url(../images/ico_xing.gif) 0 0 repeat-x; display:block; height:13px;}
+.kin-btn-box{ overflow:hidden; zoom:1; padding-top:10px}
+.kin-btn-box a{ float:left; line-height:36px; text-align:center;text-decoration:none; color:#333; width:188px; border-radius:2px}
+.vr1024 .kin-btn-box a{ width:118px;}
+.kin-btn-box .a1{ background:#ffece8; border:1px solid #ffcfc4; color:#ff5a34}
+.kin-btn-box .a1:hover{ background:#ffe5df; border:1px solid #ffcfc4}
+.kin-btn-box .a2{ background:#ebebeb; border:1px solid #d9d9d9; margin-left:10px;}
+.kin-btn-box .a2:hover{ background:#e4e4e4;}
+.vr1024 .kindle .kin-txt{ _width:130px; overflow:hidden}
+@media screen and (min-width: 1920px) {
+    .bing160328 {
+        width: 1096px;
+        margin: 0 auto 18px;
+        margin: 0 auto 20px \0;
+        padding: 1px 0 0 14px;
+        background-position: 0 center;
+    }
+}

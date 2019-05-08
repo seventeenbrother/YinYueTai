@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider {
+  height: 340px;
+  width: 1200px;
+  margin: 0 auto;
+  /* margin-top: 200px; */
+  position: relative;
+}
+
+.slider li {
+  position: absolute;
+  display: none;
+}
+
+.slider li:first-child {
+  display: block;
+}
+
+
+.arrow {
+  display: none;
+}
+
+.slider:hover .arrow {
+  display: block;
+}
+
+.arrow-left,
+.arrow-right {
+  font-family: "SimSun", "宋体";
+  width: 50px;
+  height: 70px;
+  border-radius:25%;
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+/* 小点按钮样式 */
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controls a {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border:1px solid #ccc;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.controls a:first-child {
+  margin-left: 0;
+}
+.controls a.active {
+  border-color: #fff;
+  background: #fff;
+}

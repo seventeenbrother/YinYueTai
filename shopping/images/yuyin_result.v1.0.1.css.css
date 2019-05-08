@@ -1,0 +1,42 @@
+.yuyin-box { min-width:1000px; height: 190px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); border-bottom: 1px solid #d2d2d2; background: #fff; position: fixed; width: 100%; left: 0; top: 0; z-index: 20; font-family: arial,'pingfang sc',stheiti,'microsoft yahei', sans-serif; font-weight: normal; }
+.yuyin-box th { padding-left: 35px; height: 190px; line-height: 37px; font-size: 24px; color: #333; width: 430px; text-align: left; font-weight: normal; }
+.yuyin-box th a { font-size: 16px; color: #00c; text-decoration: none; }
+.yuyin-box th a:hover { text-decoration: underline; }
+.yuyin-box td { height: 190px; padding-left: 220px; }
+.yuyin-box .round { width: 94px; height: 94px; display: inline-block; position: relative; }
+.yuyin-box .round .s1 { display: none; animation: round 2s ease infinite; -webkit-animation: round 2s ease infinite; width: 92px; height: 92px; position: absolute; left: 0; top: 0; border: 1px solid #fd6853; border-radius: 47px; }
+.yuyin-box .round .s2 { width: 94px; height: 94px; display: inline-block; background: #fd6853; position: relative; overflow: hidden; border-radius: 47px; z-index: 2; }
+.yuyin-box .round .s2 i { background: url(/web/img/voice/result/ico_yuyin.png) 0 0 no-repeat; width: 37px; height: 48px; position: absolute; z-index: 2; top: 24px; left: 29px; }
+.yuyin-box .round .s3 { display: none; width: 188px; height: 94px; background: url(/web/img/voice/result/ico_yuyin2.png) 0 0 repeat-x; position: absolute; left: 0; bottom: 0; animation: round2 1s linear infinite; -webkit-animation: round2 1s linear infinite; }
+.yuyin-box .round.on .s1, .yuyin-box .round.on .s3 { display: inline-block; }
+.yuyin-box .round .s4 { display: none; }
+
+@-webkit-keyframes round { 0% { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); opacity: 1; }
+  100% { -webkit-transform: scale3d(1.8, 1.8, 1.8); transform: scale3d(1.8, 1.8, 1.8); opacity: 0; } }
+
+@keyframes round { 0% { -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); opacity: 1; }
+  100% { -webkit-transform: scale3d(1.8, 1.8, 1.8); transform: scale3d(1.8, 1.8, 1.8); opacity: 0; } }
+@-webkit-keyframes round2 { 0% { left: 0; }
+  100% { left: -94px; } }
+@keyframes round2 { 0% { left: 0; }
+  100% { left: -94px; } }
+.yuyin-box .load .s2 { background: #fff; overflow: initial; }
+.yuyin-box .load .s2 i { background: url(/web/img/voice/result/ico_yuyinv2.png) 0 0 no-repeat; }
+.yuyin-box .load .s2 .s4 { display: block; background: url(/web/img/voice/result/ico_quan.png) 0 0 no-repeat; width: 94px; height: 94px; position: absolute; left: 0; top: 0; animation: round3 2s linear infinite; -webkit-animation: round3 2s linear infinite; }
+
+@-webkit-keyframes round3 { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+@keyframes round3 { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+.yuyin-box .err .s2 { background: #fff; overflow: initial; }
+.yuyin-box .err .s2 i { background: none; }
+.yuyin-box .err .s2 .s4 { display: block; background: url(/web/img/voice/result/ico_err.png) 0 0 no-repeat; width: 104px; height: 104px; position: absolute; left: -5px; top: -5px; }
+
+.yuyin-box .yuyin-close { background: url(/web/img/voice/result/ico_close.png) 0 0 no-repeat; width: 24px; height: 24px; position: absolute; top: 20px; right: 36px; }
+
+.yuyin-box .yuyin-close:hover { background: url(/web/img/voice/result/ico_close.png) 0 -50px no-repeat; }
+
+.qborder2 .fayin { width: 16px; height: 16px; position: absolute; top: 8px; right: 32px; z-index: 2; background: url(/web/img/vr_skin.png) no-repeat; background-image: image-set(url(/web/img/vr_skinx2.png) 2x, url(/web/img/vr_skin.png) 1x); background-image: -webkit-image-set(url(/web/img/vr_skinx2.png) 2x, url(/web/img/vr_skin.png) 1x); background-image: -moz-image-set(url(/web/img/vr_skinx2.png) 2x, url(/web/img/vr_skin.png) 1x); background-position: -20px 0;}
+
+.qborder2 .fayin:hover { background-position: -20px -20px; }
