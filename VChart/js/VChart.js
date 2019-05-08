@@ -113,7 +113,7 @@ window.onload = function () {
     }
   ];
   var timer;
-  var column_t = document.getElementById('chamList');
+  var column_t = my$('chamList');
   var champion_b = document.querySelector(".champion-b");
   var lists = column_t.querySelectorAll("li");
   var indexNum = 0;
@@ -156,8 +156,46 @@ window.onload = function () {
     oA.innerHTML = championData[index].a;
     for (let i = 0; i < oIs.length; i++) {
       oIs[i].innerHTML = championData[index].oi[i];
-      // oIs[i].innerHTML= parseInt(Math.random()*100000);
     }
   }
   autoPlay();
+  var returntop = document.querySelector('.hide');
+  returntop.onclick = function name(params) {
+    var html = document.documentElement;
+    animate(html, scrollY)
+    // html.scroll(0, 0);
+
+  }
+  window.onscroll = function () {
+    if (scrollY > 1000) {
+      returntop.className = 'returntop';
+    } else {
+      returntop.className = 'hide';
+    }
+  }
+  function animate(element, current) {
+    clearInterval(element.timeid);
+    element.timeid = setInterval(function () {
+      var flag = true;
+      var target = 0;
+      var step = (target - current) / 10;
+      step = step > 0 ? Math.ceil(step) : Math.floor(step);
+      current += step;
+      element.scroll(0, current);
+      if (current != target) {
+        flag = false;
+      }
+      if (flag) {
+        clearInterval(element.timeid);
+      }
+    }, 20);
+  }
+  function my$(id) {
+    return document.getElementById(id);
+  }
+
+
+
+
+
 }
