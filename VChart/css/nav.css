@@ -1,4 +1,4 @@
-a {
+﻿a {
   text-decoration: none;
 }
 
@@ -154,20 +154,64 @@ li {
 /* 底部 */
 
 .footer {
+  padding: 10px 0;
+}
+
+.footer .w {
   width: 1200px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.footer a {
+  position: relative;
+  color: #999;
+}
+
+.footer a:hover {
+  color: #34d7c3;
 }
 
 .f-obout {
-  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.f-obout li {
-  float: left;
-  padding: 0 10px;
-}
-
-.f-obout li a {
+.f-obout a {
   font-size: 14px;
-  border-right: 1px dashed #000;
+  line-height: 35px;
+  padding: 0 15px 0 10px;
+  color: #666;
+}
+
+.f-obout span {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: url(../img/ico_index.png)no-repeat -70px 0;
+}
+
+.footer p {
+  font-size: 12px;
+  color: #999;
+  line-height: 25px;
+}
+
+.footer p span {
+  position: absolute;
+  top: -4px;
+  left: -28px;
+  width: 25px;
+  height: 25px;
+  background: url(../img/culture.png) no-repeat 0px 0px;
+  background-size: 25px 25px;
+}
+
+.footer p i {
+  position: absolute;
+  bottom: 0px;
+  right: -40px;
+  width: 40px;
+  height: 48px;
+  background: url(../img/biaoshi.gif) no-repeat;
+  background-size: 40px 48px;
 }
