@@ -56,6 +56,11 @@ li {
   text-indent: -9999px;
 }
 
+.nav .present{
+  background: #222;
+  color: #34d7c3;
+}
+
 .nav-list a:hover {
   background: #222;
   color: #34d7c3;
