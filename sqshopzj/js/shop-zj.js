@@ -24,7 +24,7 @@ $('input[type=text]').mouseleave(function () {
 // 头部导航下边框
 $('.headFot').find('li').click(function () {
     $(this).children().addClass('active').parent().siblings().children().removeClass('active');
-    return false;
+
 })
 
 // 筛选按钮
