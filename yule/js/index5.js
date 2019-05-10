@@ -30,12 +30,9 @@ function animation(element, target, stepm, fn) {
             }
             if(key =='scrollTop'){
                 var count = getScroll();
-                var step = stepm;
-                step = count < target[key] ? step : -step;
+                var step = (target[key]-getScroll())/10;
+                step = step>0? Math.ceil(step) : Math.floor(step);
                 count += step;
-                if (Math.abs(target[key] - count) <= Math.abs(step)) {
-                    count = target[key];
-                }
                 element[key] = count;
                 if (target[key] != count) {
                     flag = false;
@@ -173,11 +170,11 @@ function animation(element, target, stepm, fn) {
                     index = 0;
                     zanT = true;
                 }
-                animation(banner_top_ul, { left: -index * imgWidth }, 30, fn);
+                animation(banner_top_ul, { left: -index * imgWidth }, 40, fn);
             }
             else {
                 items_a[index].className = 'active';
-                animation(banner_top_ul, { left: -index * imgWidth }, 30, function () { zanT = true });
+                animation(banner_top_ul, { left: -index * imgWidth }, 40, function () { zanT = true });
             }
         }
     }
@@ -192,14 +189,14 @@ function animation(element, target, stepm, fn) {
                 index--;
             }
             items_a[index].className = 'active';
-            animation(banner_top_ul, { left: -index * imgWidth }, 30, function () { zanT = true });
+            animation(banner_top_ul, { left: -index * imgWidth }, 40, function () { zanT = true });
         }
     }
     function zdPlay() {
         clearInterval(zd);
         zd = setInterval(function () {
             anniu_next.onclick();
-        }, 2000);
+        }, 3000);
     };
     zdPlay();
     // 给轮播图添加动画
@@ -834,24 +831,27 @@ function animation(element, target, stepm, fn) {
 
     // 回到顶部
 
-    my$('.topBot')[0].style.top=window.innerHeight+my$('.topBot')[0].offsetHeight+'px';
+    my$('.topBot')[0].style.top=window.innerHeight+'px';
+    var topBotFlag=true;
     window.onscroll=function(){
         if(getScroll()>=window.innerHeight-150){
             my$('.topBot')[0].style.display='block';
-            if(my$('.topBot')[0].style.top!=window.innerHeight-150){
-            animation(my$('.topBot')[0],{top:window.innerHeight-150},20);
+            if(topBotFlag&&parseInt(my$('.topBot')[0].style.top)==window.innerHeight){
+                console.log(parseInt(my$('.topBot')[0].style.top));
+                topBotFlag=false;
+            animation(my$('.topBot')[0],{top:window.innerHeight-150},16,function(){
+                topBotFlag=true;
+            });
             }
         }
         else{
             my$('.topBot')[0].style.display='none';
-            my$('.topBot')[0].style.top=window.innerHeight+my$('.topBot')[0].offsetHeight+'px';
+            my$('.topBot')[0].style.top=window.innerHeight+'px';
         }
     }
     my$('.topBot')[0].onclick=function(){
-       animation(document.documentElement,{scrollTop:0},60);
-        animation(document.body,{scrollTop:0},60);
+       animation(document.documentElement,{scrollTop:0});
+        animation(document.body,{scrollTop:0});
     }
-
-
 })();
 
