@@ -1,0 +1,107 @@
+﻿
+.y_shop_notice{
+    padding:0 36px 100px 36px;
+    background: #fff;
+    width:929px;
+    margin:0 auto;
+}
+.y_shop_notice_head{
+    height:174px;
+}
+.y_shop_notice_head h1{
+    font-size:44px;
+    color:#de4767;
+    text-align: center;
+    line-height: 90px;
+}
+.y_shop_notice_head ul li,
+.y_shop_notice_head ul li.on{
+    width:118px;
+    height:70px;
+    float:left;
+    background-image: url("../images/y_shop_notice.png");
+    background-position:center 10px;
+    background-repeat:no-repeat;
+}
+.y_shop_notice_head ul li.on{
+    background-position:center -90px;
+}
+.y_shop_notice_head ul{
+    
+    width:600px;
+    margin:0 auto;
+}
+.y_shop_notice_head ul li span{
+    display:block;
+    text-align:center;
+    padding-top:45px;
+    cursor:pointer;
+}
+.y_shop_notice_head ul li.on a{
+    color:#e02950;
+}
+.y_shop_notice_textbox{
+    overflow: hidden;
+    position:relative;;
+}
+.y_shop_notice_text{
+    position:relative;
+}
+.y_shop_notice_text div{
+    border:2px solid #dcdcdc;
+    border-radius: 10px;
+    padding:20px;
+    text-align: center;
+}
+.y_shop_notice_text div img{
+    display: inline;
+    padding:15px 0;
+}
+.y_shop_notice_text div p{
+    font-size:14px;
+    line-height: 32px;
+    text-indent:2em;
+    text-align:left;
+}
+.y_shop_notice_text div p.bgc,
+.y_shop_notice_text div p strong{
+    font-size:16px;
+}
+.y_shop_notice_text div p strong.f14{
+    font-size:14px;
+}
+.y_shop_notice_text div p em{
+    color:#e02950;
+}
+.y_shop_notice_text div p.bgc{
+    background:#e64560;
+    color:#fff;
+    font-weight:bold;
+    padding:5px 10px;
+}
+.y_shop_notice h2{
+    height:90px;
+    background-image: url("../images/y_shop_notice_title.png");
+    background-repeat: no-repeat;
+    background-position: 10px 29px;
+    line-height: 9999px;
+    overflow: hidden;
+}
+.y_shop_notice h2.shipments{
+    background-position: 10px -61px;
+}
+.y_shop_notice h2.reserve{
+    background-position: 10px -160px;
+}
+.y_shop_notice h2.Send{
+    background-position: 10px -260px;
+}
+.y_shop_notice h2.postage{
+    background-position: 10px -360px;
+}
+.y_shop_notice h2.pack{
+    background-position: 10px -460px;
+}
+.y_shop_notice h2.returns{
+    background-position: 10px -560px;
+}
