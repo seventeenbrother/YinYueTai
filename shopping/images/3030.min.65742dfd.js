@@ -1,1 +1,0 @@
-define("vr.tpl3030",["$s","authentication"],function(a,b){return function(c,d,e){b(d,e,a.$("sogou_vr_"+d+"_tip_"+e).innerHTML)}});
